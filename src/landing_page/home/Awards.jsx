@@ -37,9 +37,11 @@ function Awards() {
                                 </li>
                             </ul>
                         </div>
-                        <img src="media/Images/pressLogos.png" alt="" style={{width:"80%"}}/>
                     </div>
                 </div>
+            </div>
+            <div className='text-center pb-5'>
+            <img src="media/Images/pressLogos.png" alt="" style={{width:"60%"}}/>
             </div>
         </div>
     );
