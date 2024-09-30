@@ -1,5 +1,6 @@
 import React from "react";
 import '../index.css';
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -8,13 +9,13 @@ function Navbar() {
       style={{ backgroundColor: "#fff" }}
     >
       <div className="container p-1">
-        <a className="navbar-brand ms-3" href="#">
+        <Link className="navbar-brand ms-3" to="/">
           <img
             src="media\Images\logo.svg"
             alt="logo"
             style={{ width: "25%" }}
           />
-        </a>
+        </Link> 
         <button
           className="navbar-toggler"
           type="button"
@@ -33,29 +34,29 @@ function Navbar() {
               //   style="--bs-scroll-height: 100px;"
             >
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to="/signup">
                   Signup
-                </a>
+                </Link> 
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <Link className="nav-link active" to="/about">
                   About
-                </a>
+                </Link> 
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <Link className="nav-link active" to="/product">
                   Product
-                </a>
+                </Link> 
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <Link className="nav-link active" to="/pricing">
                   Pricing
-                </a>
+                </Link> 
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <Link className="nav-link active" to="/support">
                   Support
-                </a>
+                </Link> 
               </li>
             </ul>
           </form>
