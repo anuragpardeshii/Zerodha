@@ -3,10 +3,10 @@ import "../index.css";
 
 function Footer() {
   return (
-    <footer className="border-top mt-5" style={{backgroundColor: "rgb(250,250,250"}}>
+    <footer className="border-top ps-md-5 pe-md-5 mt-sm-3 mt-5" style={{backgroundColor: "rgb(250,250,250"}}>
     <div className="container">
       <div className="row mt-5">
-        <div className="col">
+        <div className="col-md-3 col-sm-12">
           <img
             src="media/Images/logo.svg"
             alt="logo"
@@ -16,7 +16,7 @@ function Footer() {
             &copy; 2010 - 2024, Zerodha Broking Ltd. All rights reserved.
           </p>
         </div>
-        <div className="col rvmtd">
+        <div className="col-md-3 col-sm-12 mt-sm-3 rvmtd">
           <p>Company</p>
           <a href="">About</a>
           <br></br>
@@ -35,19 +35,19 @@ function Footer() {
           <a href="">Zerodha Cares (CSR)</a>
           <br></br>
         </div>
-        <div className="col rvmtd">
+        <div className="col-md-3 col-sm-12 mt-sm-3 rvmtd">
           <p>Support</p>
-          <a href="">Contact us</a>
-          <a href="">Support portal</a>
-          <a href="">Z-Connect blog</a>
-          <a href="">List of charges</a>
-          <a href="">Downloads & resources</a>
-          <a href="">Videos</a>
-          <a href="">Market overview</a>
-          <a href="">How to file a complaint?</a>
-          <a href="">Status of your complaints</a>
+          <a href="">Contact us</a> <br />
+          <a href="">Support portal</a> <br />
+          <a href="">Z-Connect blog</a> <br />
+          <a href="">List of charges</a> <br />
+          <a href="">Downloads & resources</a> <br />
+          <a href="">Videos</a> <br />
+          <a href="">Market overview</a> <br />
+          <a href="">How to file a complaint?</a> <br />
+          <a href="">Status of your complaints</a> <br />
         </div>
-        <div className="col rvmtd">
+        <div className="col-md-3 col-sm-12 mt-sm-3 rvmtd">
           <p>Account</p>
           <a href="">Open an account</a>
           <a href="">Fund Transfer</a>
