@@ -1,13 +1,16 @@
 import Hero from "./Hero";
 import React from "react";
-import Brokerage from "./Brokerage"
+import Brokerage from "./Brokerage";
+import OpenningCharges from "./OpenningCharges";
+import OpenAccount from "../OpenAccount";
 
 function Pricing() {
     return (
       <div>
-          <h1>Pricing</h1>
           <Hero />
+          <OpenAccount />
           <Brokerage />
+          <OpenningCharges />
       </div>
     );
   }

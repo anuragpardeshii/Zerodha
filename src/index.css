@@ -23,3 +23,16 @@ code {
     font-weight: 600;
     font-size: 1.3rem;
 }
+
+.t-padding td{
+    padding: 1rem 1.2rem;
+}
+
+.t-padding th{
+    padding: 1rem 1.2rem;
+}
+
+.free-tag {
+    background-color: green;
+    color: white;
+}
