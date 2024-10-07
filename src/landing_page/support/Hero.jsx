@@ -1,7 +1,7 @@
 function Hero() {
   return (
     <>
-      <div className="text-muted" style={{ backgroundColor: "#387ed1" }}>
+      <div className="" style={{ backgroundColor: "#387ed1", padding: "2rem 5%" }}>
         <div className="row p-md-3 p-sm-1 m-5">
           <div className="d-flex justify-content-between">
             <a
@@ -18,9 +18,9 @@ function Hero() {
               Track Tickets
             </a>
           </div>
-          <div className="row">
-            <div className="col-8">
-              <h4>
+          <div className="row d-flex">
+            <div className="col-7">
+              <h4 className="pt-4 pb-4" style={{color: "white"}}>
                 Search for an answer or browse help topics to create a ticket
               </h4>
               <div className="col p-2 w-100 d-flex flex-row align-items-center" style={{backgroundColor: "white"}}>
@@ -36,14 +36,20 @@ function Hero() {
                 <i class="fa fa-search w-100" aria-hidden="true"></i>
                 </span>
               </div>
-              <div className="d-flex p-2">
-                <p className="border-bottom pb-2 me-4">Track account opening</p>
-                <p className="border-bottom pb-2 me-4">Track segment activation</p>
-                <p className="border-bottom pb-2 me-4">Intraday margins</p>
-                <p className="border-bottom pb-2 me-4">Kite user manual</p>
+              <div className="d-flex flex-wrap pt-4 pb-4">
+                <p className="border-bottom pb-2 me-4" style={{color: "white", fontSize: "1.2rem"}}>Track account opening</p>
+                <p className="border-bottom pb-2 me-4" style={{color: "white", fontSize: "1.2rem"}}>Track segment activation</p>
+                <p className="border-bottom pb-2 me-4" style={{color: "white", fontSize: "1.2rem"}}>Intraday margins</p>
+                <p className="border-bottom pb-2 me-4" style={{color: "white", fontSize: "1.2rem"}}>Kite user manual</p>
               </div>
             </div>
-            <div className="col-4"></div>
+            <div className="col-5 pt-4 ps-5" style={{lineHeight: "2"}}>
+              <h3 style={{color: "white"}}>Features</h3>
+              <ol>
+                <li style={{color: "white", fontSize: "1.2rem"}}>Suspension of trading - IDFC Limited</li>
+                <li style={{color: "white", fontSize: "1.2rem"}}>Rights Entitlements listing in October 2024</li>
+              </ol>
+            </div>
           </div>
         </div>
       </div>
