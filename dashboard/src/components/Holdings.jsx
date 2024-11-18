@@ -6,24 +6,25 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allHoldings")
+    axios
+      .get("http://localhost:3002/allHoldings")
       .then((res) => {
         setAllHoldings(res.data);
       })
-      .catch((err) => console.error("Error fetching holdings:", err)); // Add error handling
+      .catch((err) => console.error("Error fetching holdings:", err));
   }, []);
 
-  // Ensure `data` is defined or uncomment this section if needed
-  // const data = {
-  //   labels: allHoldings.map(stock => stock.name), // or custom labels
-  //   datasets: [
-  //     {
-  //       label: "Dataset 1",
-  //       data: allHoldings.map(stock => stock.qty), // Example data
-  //       backgroundColor: "rgba(255, 99, 132, 0.5)",
-  //     },
-  //   ],
-  // };
+  const labels = allHoldings.map((stock) => stock.name);
+  const data = {
+    labels: labels,
+    datasets: [
+      {
+        label: "Stock Prices",
+        data: allHoldings.map((stock) => stock.price),
+        backgroundColor: "rgba(255, 99, 132, 0.5)",
+      },
+    ], 
+  };
 
   return (
     <>
@@ -71,11 +72,15 @@ const Holdings = () => {
 
       <div className="row">
         <div className="col">
-          <h5>29,875.<span>55</span></h5>
+          <h5>
+            29,875.<span>55</span>
+          </h5>
           <p>Total investment</p>
         </div>
         <div className="col">
-          <h5>31,428.<span>95</span></h5>
+          <h5>
+            31,428.<span>95</span>
+          </h5>
           <p>Current value</p>
         </div>
         <div className="col">
@@ -83,9 +88,8 @@ const Holdings = () => {
           <p>P&L</p>
         </div>
       </div>
-      
-      {/* Uncomment and define `data` if necessary */}
-      {/* <VerticalGraph data={data} /> */}
+
+      <VerticalGraph data={data} />
     </>
   );
 };
