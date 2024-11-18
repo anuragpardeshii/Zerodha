@@ -1,15 +1,14 @@
 import React from "react";
-import {render, screen } from "@testing-liabrar/react";
+import { render, screen } from "@testing-library/react";
 import '@testing-library/jest-dom/extend-expect';
 import Hero from "../src/landing_page/home/Hero";
 
-//Tese Suite
-decribe('Hero Component', () => {
+// Test Suite
+describe('Hero Component', () => {
     test("renders hero image", () => {
-        render(<Hero/>);
+        render(<Hero />);
         const heroImage = screen.getByAltText("Hero Image");
         expect(heroImage).toBeInTheDocument();
-        expect(heroImage).toHaveAtteibute('src', 'media/Images/homeHero.png');
-
+        expect(heroImage).toHaveAttribute('src', 'media/Images/homeHero.png');
     });
 });

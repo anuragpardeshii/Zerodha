@@ -1,6 +1,9 @@
-module.exports = {
+export default {
     testEnvironment: "jsdom",
-    setupFilesAfterEnv: ["<rootDir>/src/setupTests.js"],
-    testMatch: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"]
+    setupFilesAfterEnv: ["frontend/jest.setup.js"],
+    testMatch: ["**/__tests__/**/*.[jt]s?(x)"],
+    transform: {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    }
   };
   
